@@ -1,0 +1,13 @@
+#+title: Compute short tour along benches
+#+author: Nicky van Foreest
+
+The code computes the reasonably short path, with 2opt, along benches found in a specified area of OpenStreetMap.
+
+The script ~run_scenario.py~ shows the sequence in which the scripts have to run.
+Just load a scenario from ~scenarios.py~, or add one similar to the ones in ~scenarios.py~.
+Note that it is necessary to distinguish between a bounding box or a relation to determine what area to load.
+
+I used [[https://github.com/norvig/pytudes/blob/main/ipynb/TSP.ipynb]] as basis for the 2opt code.
+
+
+To prevent another layer of complexity I choose not to make python project.
